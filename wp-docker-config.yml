@@ -1,0 +1,23 @@
+# The settings for the database (mariadb)
+database:
+  root_password_random: true
+
+  # If you want to control the root password, set root_password_random to false
+  # and set a root_password:
+  #root_password: fqT!%gLsB55cJ!ZD
+
+sites:
+  t1.alicesu.ml:
+    ### The "default" section is optional
+    ### The default site does not match any domain name
+    database_name: default_site
+    database_password: 9&2H$gb?cJR7z8cx
+  
+  t2.alicesu.ml:
+    alias:
+      - t21.alicesu.ml
+      - t22.alicesu.ml
+
+  t3.alicesu.ml:
+  t4.alicesu.ml:
+  t5.alicesu.ml:
