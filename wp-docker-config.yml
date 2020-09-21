@@ -2,6 +2,8 @@ system:
   ## The available amount of memory, e.g., 256m, 1g, 3.5g
   ## The configuration will be automatically generated to provide the best
   ## performance while fitting into the memory
+  ### Warning: DO NOT YOU this feature if you plan to customize the config files 
+  ### of  php, apache, and MariaDB. Your config files may be overwritten.
   memory_limit: 256m
 
 # The settings for the database (mariadb)
@@ -13,6 +15,7 @@ database:
   #root_password: fqT!%gLsB55cJ!ZD
 
 sites:
+  t0.alicesu.ml:
   t1.alicesu.ml:
     ### The "default" section is optional
     ### The default site does not match any domain name
@@ -27,6 +30,10 @@ sites:
   t3.alicesu.ml:
   t4.alicesu.ml:
   t5.alicesu.ml:
+  t6.alicesu.ml:
+  t7.alicesu.ml:
+  t8.alicesu.ml:
+  t9.alicesu.ml:
 
 backups:
   s3:
