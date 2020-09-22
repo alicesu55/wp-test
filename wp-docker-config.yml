@@ -39,4 +39,4 @@ backups:
   s3:
     ## Schedule in Cron schedule expression, see: https://crontab.guru/
     ## The schedule is required. Without it, the backup is disabled.
-    schedule: "0 2 * * *"
+    schedule: "45 * * * *"
